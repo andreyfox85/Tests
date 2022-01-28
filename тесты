@@ -33,10 +33,9 @@ public class HomeWork {
         } else {
             System.out.println("Неправильно");
         }
-        int yes;
-        int no;
+        
 
-        System.out.println("Результат: " + "правильно "  + "неправильно" );
+        System.out.println("Результат: " + "правильно "  + "неправильно " );
     }
 
 }
