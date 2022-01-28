@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class HomeWork {
     public static void main(String[] args) {
@@ -13,29 +12,33 @@ public class HomeWork {
                 "1. while\n" + "2. for\n" + "3. loop";
         System.out.println(question[0]);
         int firstQuestion = sc.nextInt();
+        int success = 0;
+        int failed = 0;
         if (firstQuestion == 2) {
             System.out.println("Правильно");
+            success += 1;
         } else {
             System.out.println("Неправильно");
-
+            failed += 1;
         }
         System.out.println(question[1]);
         int secondQuestion = sc.nextInt();
         if (secondQuestion == 3) {
             System.out.println("Правильно");
+            success += 1;
         } else {
             System.out.println("Неправильно");
+            failed += 1;
         }
         System.out.println(question[2]);
         int thirdQuestion = sc.nextInt();
         if (thirdQuestion == 1) {
             System.out.println("Правильно");
+            success += 1;
         } else {
             System.out.println("Неправильно");
+            failed += 1;
         }
-        
-
-        System.out.println("Результат: " + "правильно "  + "неправильно " );
+        System.out.println("Результат: " + "правильно " + success + " неправильно " + failed);
     }
-
 }
